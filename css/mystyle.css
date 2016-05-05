@@ -1,0 +1,51 @@
+body {
+  background-image: url('../footer_lodyas.png');
+}
+
+#viewport {
+  position: relative;
+  height: 100%;
+  background: #1d1f20;
+}
+
+#actions{
+  text-align: center;
+  margin:1%;
+}
+
+#analyzeMe {
+  padding:10px;
+  border-radius: 5px;
+}
+
+.navbar-inverse {
+  text-decoration: none;
+}
+
+li a:hover {
+  font-style: italic;
+}
+
+h6 {
+  padding-top:5px;
+}
+
+
+#output1 {
+  padding:10px;
+  background-color: rgb(121,166,254);
+  border-radius: 5px;
+}
+
+#output2 {
+  padding:10px;
+  background-color: rgb(152,161,170);
+  border-radius: 5px;
+}
+
+#output3 {
+  padding:10px;
+  background-color: rgb(105, 176, 157);
+  border-radius: 5px;
+}
+
