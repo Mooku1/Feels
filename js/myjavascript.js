@@ -46,7 +46,7 @@ function watsonKeyword(){
       keywordArr.push(data.keywords);
       var newKeyArr = keywordArr[0];
         newKeyArr.forEach(function(word){
-          $('#output2').append("<p>" + word.text +": "+ word.relevance + "</p>");
+            $('#output2').append("<p>" + word.text +": "+ word.relevance + "</p>");
         })
     }
   });
@@ -70,7 +70,8 @@ function watsonEmotion(){
       var emotionObj = data.docEmotions;
       console.log(emotionObj);
       for (var prop in emotionObj) {
-        $('#output3').append("<p>" + prop + " = " + emotionObj[prop]+ "</p>");
+        var emoPerc = emotionObj[prop]*100;
+        $('#output3').append("<p>" + prop + " = " + Math.floor(emoPerc) + "%" + "</p>");
         }
       }
     });
