@@ -1,8 +1,3 @@
-$(function() {
-    console.log( "DOM ready!" );
-
-});
-
 function watsonSentiment(){
   var urlBaseSentiment = "http://gateway-a.watsonplatform.net/calls/text/TextGetTextSentiment?";
   var apiKey = "5d6f902f3cb291bf568d36df9e5db41cf3c56093";
