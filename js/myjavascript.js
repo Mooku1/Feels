@@ -50,7 +50,6 @@ function watsonKeyword(){
         })
     }
   });
-
 }
 
 function watsonEmotion(){
