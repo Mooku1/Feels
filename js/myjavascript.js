@@ -14,8 +14,7 @@ function watsonSentiment(){
       var sentiment = data.docSentiment;
       console.log("Overall Sentiment:");
       for (var prop in sentiment) {
-        var sentPerc = sentiment[prop]*100;
-        $('#output1').append("<p>" + prop + " = " + sentPerc + "%" + "</p>");
+        $('#output1').append("<p>" + prop + " = " + sentiment[prop] + "</p>");
       }
     }
   });
@@ -42,8 +41,7 @@ function watsonKeyword(){
       keywordArr.push(data.keywords);
       var newKeyArr = keywordArr[0];
         newKeyArr.forEach(function(word){
-          var wordPerc = word.relevance *100;
-            $('#output2').append("<p>" + word.text +": " + wordPerc + "%" + "</p>");
+            $('#output2').append("<p>" + word.text +": "+ word.relevance + "</p>");
         })
     }
   });
@@ -66,8 +64,7 @@ function watsonEmotion(){
       var emotionObj = data.docEmotions;
       console.log(emotionObj);
       for (var prop in emotionObj) {
-        var emoPerc = emotionObj[prop]*100;
-        $('#output3').append("<p>" + prop + " = " + Math.floor(emoPerc) + "%" + "</p>");
+        $('#output3').append("<p>" + prop + " = " + emotionObj[prop] + "</p>");
         }
       }
     });
