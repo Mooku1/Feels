@@ -1,6 +1,6 @@
 function watsonSentiment(){
   var urlBaseSentiment = "http://gateway-a.watsonplatform.net/calls/text/TextGetTextSentiment?";
-  var apiKey = Watson_AlchemyAPI;
+  var apiKey = "5d6f902f3cb291bf568d36df9e5db41cf3c56093";
   urlBaseSentiment = urlBaseSentiment + "apikey=" + apiKey;
   var inputText = $('#userText').val();
   urlBaseSentiment = urlBaseSentiment + "&text=" + encodeURIComponent(inputText);
@@ -23,7 +23,7 @@ function watsonSentiment(){
 
 function watsonKeyword(){
   var urlBaseKeyword = "http://gateway-a.watsonplatform.net/calls/text/TextGetRankedKeywords?";
-  var apiKey = Watson_AlchemyAPI;
+  var apiKey = "5d6f902f3cb291bf568d36df9e5db41cf3c56093";
   urlBaseKeyword = urlBaseKeyword + "apikey=" + apiKey;
   var inputText = $('#userText').val();
   urlBaseKeyword = urlBaseKeyword + "&text=" + encodeURIComponent(inputText);
@@ -49,7 +49,7 @@ function watsonKeyword(){
 
 function watsonEmotion(){
   var urlBaseEmotion ="http://gateway-a.watsonplatform.net/calls/text/TextGetEmotion?";
-  var apiKey = Watson_AlchemyAPI;
+  var apiKey = "5d6f902f3cb291bf568d36df9e5db41cf3c56093";
   urlBaseEmotion = urlBaseEmotion + "apikey=" + apiKey;
   var inputText = $('#userText').val();
   urlBaseEmotion = urlBaseEmotion + "&text=" + encodeURIComponent(inputText);
